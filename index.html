@@ -1,0 +1,96 @@
+<!--
+This file is part of PG Infrastructure Status Reporting
+
+Copyright (c) 2013 National Mapping and Resource Information Authority
+
+PG Infrastructure Status Reporting is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+PG Infrastructure Status Reporting is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with PG Infrastructure Status Reporting.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>PGP-Infrastructure Status Reporting</title>
+
+	
+	<!-- ExtJS -->
+	<link rel="stylesheet" type="text/css" href="../../lib/extjs/resources/css/ext-all-gray.css">	
+	
+	<!--
+	<link href="http://cdn.sencha.io/ext/gpl/4.2.1/resources/css/ext-all-neptune.css" rel="stylesheet" />	
+	-->
+	<script type="text/javascript" src="../../lib/extjs/ext-all-debug.js"></script>	
+  	
+	<!-- Google-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1yZXmYpFbWobDe8s978R4C1P8w4fSLCU"></script>
+	<!--
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>-->
+	
+	<!-- OpenLayers -->
+	<link rel="stylesheet" type="text/css" href="../../lib/OpenLayers-2.13.1/theme/default/style.css">
+	<script src="../../lib/OpenLayers-2.13.1/OpenLayers.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../lib/geoext/resources/css/popup.css" />
+	
+	<!-- Alertify -->
+	<link rel="stylesheet" type="text/css" href="../../lib/alertifyjs/css/alertify.min.css">
+	<script type="text/javascript" src="../../lib/alertifyjs/alertify.min.js"></script>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../lib/alertifyjs/css/alertify.min.css"/>
+	<!-- Default theme -->
+	<link rel="stylesheet" href="../../lib/alertifyjs/css/themes/default.min.css"/>
+	<!-- Semantic UI theme -->
+	<link rel="stylesheet" href="../../lib/alertifyjs/css/themes/semantic.min.css"/>
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="../../lib/alertifyjs/css/themes/bootstrap.min.css"/>
+
+	<!--HTML to Canvass-->
+	<script type="text/javascript" src="../../lib/html2canvas/html2canvas.js"></script>	
+	
+	<!--Uploader-->
+	<script type="text/javascript" src="../../lib/extjs/src/ux/upload/plupload/js/plupload.js"></script>
+	<script type="text/javascript" src="../../lib/extjs/src/ux/upload/plupload/js/plupload.html4.js"></script>
+	<script type="text/javascript" src="../../lib/extjs/src/ux/upload/plupload/js/plupload.html5.js"></script>
+	<script type="text/javascript" src="../../lib/extjs/src/ux/upload/plupload/js/plupload.flash.js"></script>
+	<script type="text/javascript" src="../../lib/extjs/src/ux/upload/plupload/js/plupload.silverlight.js"></script>
+
+	<!-- Custom OpenLayers.Layer.NAMRIA -->
+	<script src="../../js/NAMRIA.js"></script>	
+	  
+	<script src="../../Viewport.js"></script>
+	
+	<script>
+		
+		
+		function getURLParameter(name) {
+			  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+		}
+		
+		//get verified parameter in url
+		var verified=getURLParameter('verified')
+		
+	</script>
+	
+	
+	
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
